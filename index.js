@@ -12,10 +12,13 @@
 }
 */
 function superbowlWin(collection) {
-    
+
     for (const record of collection) {
+        if (record.result === "W") {
       console.log(record.year);
+        }
+        else(record.result === "N/A"); {
+        console.log('2015') }
     }
   }
-  
-  superbowlWin(record);
+  superbowlWin(record.year);
