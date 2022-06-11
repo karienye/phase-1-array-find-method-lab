@@ -12,6 +12,12 @@
 }
 */
 function superbowlWin(collection) {
+    const record = collection.find 
+    (collection => collection.result === 'W');
+    return record?record.year:undefined;
+    }
+
+/* function superbowlWin  (collection) {
 
     for (const record of collection) {
         if (record.result === "W") {
@@ -21,4 +27,4 @@ function superbowlWin(collection) {
         console.log('2015') }
     }
   }
-  superbowlWin(record.year);
+  superbowlWin(record.year);*/
